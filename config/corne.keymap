@@ -29,35 +29,35 @@
                 lower_layer {
 // -------------------------------------------------------------------------------
 // |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |  F1  | F2  | F3  | F4  | F5  | F6  |   |  [  | LFT | DWN |  UP | RGT |   ]  |
-// |  F7  | F8  | F9  | F10 | F11 | F12 |   |  -  |  =  |     |     | "|" |      |
+// | C-F1 | F2  | F3  | F4  | F5  | F6  |   |  [  | LFT | DWN |  UP | RGT |   ]  |
+// | S-F7 | F8  | F9  | F10 | F11 | F12 |   |  -  |  =  |     |     | "|" |      |
 //                    |     |     |     |   |     |     | ADJ |
                         bindings = <
-   &kp GRAV &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
-   &kp F1   &kp F2    &kp F3    &kp F4    &kp F5    &kp F6            &kp LBKT  &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp RBKT
-   &kp F7   &kp F8    &kp F9    &kp F10   &kp F11   &kp F12           &kp MINUS &kp EQL   &trans    &trans    &kp PIPE  &trans
-                                &trans    &trans    &trans            &trans    &trans    &mo 3
+   &kp GRAV    &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5         &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 &kp BKSP
+   &mt LCTL F1 &kp F2    &kp F3    &kp F4    &kp F5    &kp F6            &kp LBKT  &kp LARW  &kp DARW  &kp UARW  &kp RARW  &kp RBKT
+   &mt LSFT F7 &kp F8    &kp F9    &kp F10   &kp F11   &kp F12           &kp MINUS &kp EQL   &trans    &trans    &kp PIPE  &trans
+                                   &trans    &trans    &trans            &trans    &trans    &mo 3
                         >;
                 };
 
                 raise_layer {
 // ------------------------------------------------------------------------------
 // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL  |
-// |  F1  | F2  | F3  | F4  | F5  | F6  |   |  {  | HOME| PGD | PGU | "|" |  }   |
-// |  F7  | F8  | F9  | F10 | F11 | F12 |   |  _  |  +  |     |     |  \  |      |
+// | C-F1 | F2  | F3  | F4  | F5  | F6  |   |  {  | HOME| PGD | PGU | "|" |  }   |
+// | S-F7 | F8  | F9  | F10 | F11 | F12 |   |  _  |  +  |     |     |  \  |      |
 //                    |     |     |     |   |     | ADJ |     |
                         bindings = <
-   &kp TILD &kp BANG &kp ATSN &kp HASH &kp CURU &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT  &kp LPRN  &kp RPRN &kp DEL
-   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &kp F6      &kp LBRC  &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp RBRC
-   &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12     &kp UNDER &kp PLUS &trans    &trans    &kp BSLH &trans
-                              &trans   &trans   &trans      &trans    &mo 3    &trans
+   &kp TILD    &kp BANG &kp ATSN &kp HASH &kp CURU &kp PRCT    &kp CRRT  &kp AMPS &kp KMLT  &kp LPRN  &kp RPRN &kp DEL
+   &mt LCTL F1 &kp F2   &kp F3   &kp F4   &kp F5   &kp F6      &kp LBRC  &kp HOME &kp PG_DN &kp PG_UP &kp END  &kp RBRC
+   &mt LSFT F7 &kp F8   &kp F9   &kp F10  &kp F11  &kp F12     &kp UNDER &kp PLUS &trans    &trans    &kp BSLH &trans
+                                 &trans   &trans   &trans      &trans    &mo 3    &trans
                         >;
                 };
 
                 adjust_layer {
 // -------------------------------------------------------------------------------
-// | BOOT | RST |     |     |     |     |   |     |     |     |     |     |      |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
+// | BOOT | RST |     |     |     |     |   |     |     | BDN | BUP |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     | VDN | VUP |     |      |
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
